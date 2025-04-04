@@ -85,8 +85,8 @@ def train_model():
 
 if __name__ == "__main__":
     while True:
-        name = input("Enter name of person (or 'train' to finish collecting data): ")
-        if name.lower() == 'train':
+        name = input("Enter name of person (or 'q' to finish collecting data): ")
+        if name.lower() == 'q':
             break
         collect_face_data(name)
     
