@@ -2,6 +2,17 @@
 
 
 ## Face recognition
-### Usage
+### Install
 Install Python.
-Install
+
+Install OpenCV and OpenCV-contrib (fr face recognition)
+pip install opencv-python opencv-contrib-python
+
+### Use
+Detect faces: 
+python recognise.py
+
+To Detect faces and give them a name:
+Train your model: python train_faces.py
+Run: python recognise_face.py
+
