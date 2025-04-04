@@ -9,9 +9,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 def load_name_mappings():
-    """Load the name mappings from names.txt"""
+    """Load the trained mappings from faces.txt"""
     names = {}
-    with open("names.txt", "r") as f:
+    with open("faces.txt", "r") as f:
         for line in f:
             face_id, name = line.strip().split(":")
             names[int(face_id)] = name
