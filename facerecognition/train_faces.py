@@ -53,7 +53,7 @@ def collect_face_data(name):
     cv2.destroyAllWindows()
     
     # Save the name mapping
-    with open("names.txt", "a") as f:
+    with open("faces.txt", "a") as f:
         f.write(f"{face_id}:{name}\n")
     
     logger.info(f"Face data collection completed for {name}")
